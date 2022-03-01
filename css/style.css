@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 1px);
+    background-color: #0d1a2d;
+    font-family: 'Outfit', sans-serif;
+}
+.card{
+    width: 305px;
+    height: 565px;
+    background-color: #15273f;
+    border-radius: 15px;
+    box-shadow: 0 31px 0 18px #0c1729, 0 30px 0 54px #0c192c ;
+    padding: 23px 26px 32px 26px ; /* top, right, bottom, left */ 
+}
+.equilibrium_image{
+    height: 305px;
+    border-radius: 15px;
+}
+.eye_div{
+    /* div height */
+    height: 305px; 
+    /* centering the eye */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* putting the eye/div in the right place */
+    transform: translateY(-310px);
+    /* hidding the eye/div */ 
+    opacity: 0; 
+}
+.eye_div:hover{
+    /* when hovering, eye appears with a background-color */
+    opacity: 1;
+    background-color: rgba(0,160,184,0.5);
+    cursor: pointer;
+    border-radius: 15px;
+}
+header{
+    transform: translateY(-278px);
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+.header:hover{
+     /* on mouse over, the color changes */
+    color: #21ffff;
+    cursor: pointer;
+}
+.description{
+    transform: translateY(-258px); 
+    font-size: 18px;
+    font-weight: 400;
+    color: #99aac8;
+}
+.informations{
+    transform: translateY(-230px);
+    font-size: 17px;
+    font-weight: 400;
+    color: #99aac8;
+    /* separating the elements */
+    display: flex;
+    justify-content: space-between;
+    /* adjusting clock format */
+    height: 20px;
+}
+.price{
+    /* correcting the position */
+    transform: translateX(-30px);
+    color: #21ffff;
+    font-weight: 600;
+}
+.clock_image{
+    /* correcting the position */
+    transform: translateX(30px);
+}
+.line{
+    /*https://css-tricks.com/examples/hrs/*/
+    border: 0;
+    height: 1px;
+    background: #2f4159;
+    transform: translateY(-202px);
+}
+.author{
+    /*putting image and text on the same line and aligning them*/
+    display: flex;
+    align-items: center;
+    transform: translateY(-185px);
+    color: #99aac8;
+}
+.jules_image{
+    width: 32px;
+    border-radius: 50%;
+    border: 1px  solid white;
+}
+.creator{
+    text-indent: 15px;
+}
+.jules_name{
+    color: white;
+}
+.jules_name:hover{
+    color: #21ffff;
+    cursor: pointer;
+}
